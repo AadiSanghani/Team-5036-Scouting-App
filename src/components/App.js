@@ -3,13 +3,13 @@ import { Grid } from "@material-ui/core";
 import Header from "./HeaderAndSideNavBar.jsx";
 import HomePage from "./HomePage.jsx";
 // import { store } from "../redux/CombinedReducers.js";
-import store from "../redux/HomePageReducer";
+import store from "../redux/CombinedReducers";
 
 function App() {
   return (
     <Grid container direction="column">
       <Grid item>
-        <Header />
+        <Header store={store} />
       </Grid>
       {/* SideBar */}
       <Grid item container>

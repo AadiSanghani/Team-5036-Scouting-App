@@ -2,7 +2,7 @@ const initialState = {
   currentPage: 1,
 };
 
-const SideBarReducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
   console.log("reducer From SideBar", action);
   switch (action.type) {
     case "HOME_BUTTON_PRESSED":
@@ -19,4 +19,4 @@ const SideBarReducer = (state = initialState, action) => {
   }
 };
 
-export default SideBarReducer;
+// export default SideBarReducer;
