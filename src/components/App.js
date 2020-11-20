@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
 import Header from "./HeaderAndSideNavBar.jsx";
 import HomePage from "./HomePage.jsx";
-// import { store } from "../redux/CombinedReducers.js";
 import store from "../redux/CombinedReducers";
+// import store from "../redux/HomePageReducer";
 
 function App() {
   return (
     <Grid container direction="column">
       <Grid item>
-        <Header store={store} />
+        <Header />
       </Grid>
       {/* SideBar */}
       <Grid item container>

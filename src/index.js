@@ -2,6 +2,8 @@ import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
+import { Provider } from "react-redux";
+import store from "./redux/CombinedReducers";
 
 const theme = createMuiTheme({
   palette: {
@@ -22,7 +24,9 @@ document.body.appendChild(root);
 // Now we can render our application into it
 render(
   <MuiThemeProvider theme={theme}>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </MuiThemeProvider>,
   document.getElementById("root")
 );

@@ -127,6 +127,8 @@ function HomePage(props) {
             Start Scouting!
           </Button>
         </Box>
+        <p> Test : {props.inputName}</p>
+        {console.log("Pulling Name from HomeReducer: " + props.inputName)}
       </MuiThemeProvider>
     </div>
   );
@@ -134,9 +136,9 @@ function HomePage(props) {
 
 const mapStateToProps = (state) => {
   return {
-    inputName: state.inputName,
-    inputMatchNum: state.inputMatchNum,
-    inputTeamNum: state.inputTeamNum,
+    inputName: state.Home.inputName,
+    inputMatchNum: state.Home.inputMatchNum,
+    inputTeamNum: state.Home.inputTeamNum,
   };
 };
 

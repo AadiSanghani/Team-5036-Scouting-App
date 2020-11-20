@@ -198,13 +198,14 @@ function Header(props) {
 
         <Divider />
       </Drawer>
+      {console.log("Current Page is: " + props.currentPage)}
     </div>
   );
 }
 
 const mapStateToProps = (state) => {
   return {
-    currentPage: state.currentPage,
+    currentPage: state.Sidebar.currentPage,
   };
 };
 
