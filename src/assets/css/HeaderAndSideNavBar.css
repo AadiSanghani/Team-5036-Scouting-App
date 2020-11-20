@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+.appBarStyle {
+  -webkit-app-region: drag;
+}
+
+.minimize-btn {
+  padding-bottom: 25%;
+}
+
+.close-btn:hover {
+  background-color: rgb(252, 72, 72) !important;
+  border-radius: 25%;
+}
+.icon-resize {
+  width: 50%;
+  height: 50%;
+}
+
+/* .root {
+  display: flex;
+} */
+
+.padding {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.listPadding {
+  margin-top: 100%;
+}
+
+.homePadding {
+  margin-top: 25%;
+  margin-bottom: 25%;
+  margin-left: 5%;
+}
+
+.flagPadding {
+  margin-top: 25%;
+  margin-bottom: 25%;
+  margin-left: 6%;
+}

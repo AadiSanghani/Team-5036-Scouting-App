@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+.appBarStyle {
+  -webkit-app-region: drag;
+}
+
+.minimize-btn {
+  padding-bottom: 25%;
+}
+
+.close-btn:hover {
+  background-color: rgb(252, 72, 72) !important;
+  border-radius: 25%;
+}
