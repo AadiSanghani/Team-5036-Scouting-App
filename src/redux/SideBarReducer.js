@@ -3,7 +3,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  console.log("reducer From SideBar", action.value);
   switch (action.type) {
     case "HOME_BUTTON_PRESSED":
       return { currentPage: action.value };

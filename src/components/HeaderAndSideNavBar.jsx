@@ -31,6 +31,8 @@ import { connect } from "react-redux";
 
 const remote = require("electron").remote;
 
+//Styling
+
 const useStyles = makeStyles((themes) => ({
   typographyStyle: {
     flexGrow: 1,
@@ -71,9 +73,12 @@ const theme = createMuiTheme({
   },
 });
 
+//Actual Function
+
 function Header(props) {
   const classes = useStyles();
 
+  //List that Shows the Icons on the Sidebar
   const itemsList = [
     {
       text: "Home",
@@ -86,7 +91,7 @@ function Header(props) {
         />
       ),
       whenClicked: () => {
-        props.onHome;
+        props.onHome();
       },
     },
     {
@@ -95,7 +100,7 @@ function Header(props) {
         <FontAwesomeIcon icon={faRobot} size="3x" className="padding" inverse />
       ),
       whenClicked: () => {
-        props.onRobot;
+        props.onRobot();
       },
     },
     {
@@ -109,7 +114,7 @@ function Header(props) {
         />
       ),
       whenClicked: () => {
-        props.onController;
+        props.onController();
       },
     },
     {
@@ -123,7 +128,7 @@ function Header(props) {
         />
       ),
       whenClicked: () => {
-        props.onFlag;
+        props.onFlag();
       },
     },
   ];
@@ -140,6 +145,8 @@ function Header(props) {
     window.minimize();
   }
 
+  //Actual Component Aspect
+
   return (
     <div className={classes.root}>
       <AppBar position="static" color="primary" className={classes.appBar}>
@@ -155,10 +162,6 @@ function Header(props) {
               </MuiThemeProvider>
             </Grid>
             <Grid item xs={6}></Grid>
-
-            {/* <Grid item container xs={2} justify="flex-end">
-         
-          </Grid> */}
           </Grid>
           <IconButton color="inherit" onClick={minimizeWindow}>
             <MinimizeIcon className="minimize-btn" />
@@ -202,6 +205,8 @@ function Header(props) {
     </div>
   );
 }
+
+//Redux Stuff
 
 const mapStateToProps = (state) => {
   return {

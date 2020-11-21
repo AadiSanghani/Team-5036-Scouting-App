@@ -13,6 +13,8 @@ import "../assets/css/HomePage.css";
 import Logo from "../assets/imgs/Logo.png";
 import { connect } from "react-redux";
 
+//Styling
+
 const useStyles = makeStyles((theme) => ({
   imgResize: {
     width: 175,
@@ -47,6 +49,8 @@ const modernFont = createMuiTheme({
     fontFamily: "montserrat",
   },
 });
+
+//HomePage Function
 
 function HomePage(props) {
   const classes = useStyles();
@@ -127,12 +131,12 @@ function HomePage(props) {
             Start Scouting!
           </Button>
         </Box>
-        <p> Test : {props.inputName}</p>
-        {console.log("Pulling Name from HomeReducer: " + props.inputName)}
       </MuiThemeProvider>
     </div>
   );
 }
+
+//Redux Stuff
 
 const mapStateToProps = (state) => {
   return {
