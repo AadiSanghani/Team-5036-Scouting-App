@@ -6,6 +6,9 @@ import store from "../redux/CombinedReducers";
 // import store from "../redux/HomePageReducer";
 
 function App() {
+  {
+    console.log(store.Sidebar);
+  }
   return (
     <Grid container direction="column">
       <Grid item>
