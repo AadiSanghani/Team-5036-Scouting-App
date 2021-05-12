@@ -3,14 +3,14 @@
 This is a custom desktop application that FIRST Robotics Competition will use in the future in order to scout other teams. Admittedly, the app is still in development but will be ready for use for 2022's season. This project uses ReactJS, ElectronJs, and Redux. 
 
 ## UI For The Application
-This is the Home of the App:
+### This is the Home of the App:
 ![Home](ScoutingAppUIImages/Home.png)
 
-This is the Autonomous Tab:
+### This is the Autonomous Tab:
 ![](ScoutingAppUIImages/Auto.png)
 
-This is the Teleoperator Tab: 
+### This is the Teleoperator Tab: 
 ![](ScoutingAppUIImages/Teleop.png)
 
-This is the End Game Tab: 
+### This is the End Game Tab: 
 ![](ScoutingAppUIImages/EndGame.png)
